@@ -7,6 +7,11 @@ th {
   border: black solid;
 }
 
-td {
+td, tr {
   border: gray solid;
+}
+
+button {
+  background-color:#338AFF;
+  margin: 1px;
 }
