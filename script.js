@@ -42,8 +42,8 @@ async function createTable(){
                 <td>${data[i].creditorName}</td>
                 <td>${data[i].firstName}</td>
                 <td>${data[i].lastName}</td>
-                <td>${data[i].minPaymentPercentage}</td>
-                <td>${data[i].balance}</td>
+                <td>${data[i].minPaymentPercentage.toFixed(2)}%</td>
+                <td>${data[i].balance.toFixed(2)}</td>
               </tr>`
     tableBody.innerHTML += row
   }
