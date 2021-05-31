@@ -1,3 +1,12 @@
 .table-container {
-  background-color: whitesmoke;
+  background-color: white;
+  text-align: left;
+}
+
+th {
+  border: black solid;
+}
+
+td {
+  border: gray solid;
 }
