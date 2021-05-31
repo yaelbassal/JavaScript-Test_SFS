@@ -42,6 +42,7 @@ $(document).ready(function () {
 
     for (let i = 0; i < data.length; i++) {
       let row = `<tr>
+                <td><input type="checkbox"></td>
                 <td>${data[i].creditorName}</td>
                 <td>${data[i].firstName}</td>
                 <td>${data[i].lastName}</td>
@@ -90,4 +91,16 @@ $(document).ready(function () {
     let deleteTableRow = document.getElementById("table-body");
     deleteTableRow.deleteRow(-1);
   });
+
+  /* Helpful Resources:
+  https://www.techiedelight.com/implement-select-all-check-box-html-javascript/
+  */
+
+  document.getElementById("select-all").onclick = function(){
+    let allCheckboxes = document.getElementsByTagName("input");
+    for(let checkbox of allCheckboxes){
+      checkbox.checked = this.checked;
+    }
+  }
+
 });
