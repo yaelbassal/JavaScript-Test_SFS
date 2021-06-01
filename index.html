@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- script allows us to use jQuery, useful to access document.ready() -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>JavaScript Test</title>
   </head>
   <body>
@@ -15,7 +13,7 @@
       <table>
         <thead>
           <tr>
-            <th><input type="checkbox"  id="select-all"></th>
+            <th id="checkbox-column"><input type="checkbox" class="checkbox" id="select-all"></th>
             <th>Creditor</th>
             <th>First Name</th>
             <th>Last Name</th>
@@ -24,11 +22,20 @@
           </tr>
         </thead>
         <tbody id="table-body"></tbody>
-        <tfoot></tfoot>
       </table>
       <button type="button" id="add">Add Debt</button>
       <button type="button" id="remove">Remove Debt</button>
-    </section>
+      <section id="table-values">
+        <p>Total</p>
+        <p>$<span id="total-balance">0</span></p>
+      </section>
+      <section>
+        <p>Total Row Count:<span id="total-row-count">0</span></p>
+        <p>Check Row Count:<span id="check-row-count">0</span></p>
+      </section>
+      <!-- script allows us to use the jQuery JavaScript Library, useful to access document.ready()-->
+      <!-- scripts go at the bottom of index.html to load last in browser -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
