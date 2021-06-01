@@ -80,11 +80,13 @@ $(document).ready(function () {
     let cell3 = newRow.insertCell(2);
     let cell4 = newRow.insertCell(3);
     let cell5 = newRow.insertCell(4);
-    cell1.innerHTML = "New Cell1"
+    let cell6 = newRow.insertCell(5);
+    cell1.innerHTML = '<td><input type="checkbox"></td>'
     cell2.innerHTML = "New Cell2"
     cell3.innerHTML = "New Cell3"
     cell4.innerHTML = "New Cell4"
     cell5.innerHTML = "New Cell5"
+    cell6.innerHTML = "New Cell6"
   });
 
   $("#remove").click(function () {
@@ -104,3 +106,5 @@ $(document).ready(function () {
   }
 
 });
+
+
