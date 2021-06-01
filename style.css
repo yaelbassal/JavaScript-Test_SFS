@@ -1,3 +1,5 @@
+/* Table Styling */
+
 .table-container {
   background-color: white;
   text-align: left;
@@ -13,5 +15,31 @@ td, tr {
 
 button {
   background-color:#338AFF;
+  margin: 1px;
+}
+
+/* Checkbox Column */
+
+td input {
+  width: 50px;
+}
+
+/* not currently bring applied to new rows */
+#checkbox-column, .checkbox-container {
+  text-align: center;
+  border: 0;
+}
+
+/* Table Totals Section */
+
+#table-values {
+  background-color: lightblue;
+  width: 521px;
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  display: inline;
   margin: 1px;
 }
